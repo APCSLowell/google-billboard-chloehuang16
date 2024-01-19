@@ -19,8 +19,9 @@ public class Main {
         return false;
     }
     for(int i = 2; i <= Math.sqrt(dNum) + 1; i++) {
-        if(dNum % i == 0)
+        if(dNum % i == 0){
             return false;
+        }
     }
     return true;  
 }
