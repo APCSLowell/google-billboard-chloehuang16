@@ -14,14 +14,13 @@ public class Main {
         
     }
 
-    public static boolean isPrime(double dNum)  
-    {   
-        if(dNum < 2)  
-          return false;
-          for(int i = 2; i < Math.sqrt(dNum);i++){
-          if(dNum % i == 0)
+    public static boolean isPrime(double dNum) {   
+    if(dNum < 2){  
+        return false;
+    }
+    for(int i = 2; i <= Math.sqrt(dNum) + 1; i++) {
+        if(dNum % i == 0)
             return false;
-          }
-        return true;  
-    } 
+    }
+    return true;  
 }
